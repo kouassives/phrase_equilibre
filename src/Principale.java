@@ -2,7 +2,7 @@ import java.util.Scanner;
 // GIT
 public class Principale {
 
-	//kimou
+	//kimou bien
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("DONNER LA PHRASE");
