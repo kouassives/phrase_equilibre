@@ -1,9 +1,8 @@
 import java.util.Scanner;
-// GIT
+
 public class Principale {
 
-	//kimou bien
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("DONNER LA PHRASE");
 		Scanner sc = new Scanner(System.in);
@@ -12,14 +11,14 @@ public class Principale {
 		reperage(verification(phrase),phrase);
 		
 		sc.close();
-	}
+	}*/
 	
 	
-static int verification(String phrase) {
+public static int verification(String phrase) {
 	Pile pile=new Pile(100);
 	char[] caractere = {'(','[','{','ʻ','"',')',']','}','ʼ','"'};
 	
-permierfor : for (int i=0;i<phrase.length();i++){
+for (int i=0;i<phrase.length();i++){
 		if( appartient(phrase.charAt(i),'o') )
 			pile.empiler(phrase.charAt(i));
 		else if (appartient(phrase.charAt(i),'f')  )
@@ -57,12 +56,14 @@ permierfor : for (int i=0;i<phrase.length();i++){
 	if (!pile.estvide()) 
 		{
 		System.out.println("phrase non equilibre");
+		return -2;
 		}
 	else System.out.println("phrase equilibre");
 	return -1;
 	}
 
-static void reperage(int i,String phrase)
+
+public static void reperage(int i,String phrase)
 {
 	if (i>=0)
 	{
